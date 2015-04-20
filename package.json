@@ -1,6 +1,6 @@
 {
   "name": "nibbler-configurator",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Common module for creating nibbler's context object from various inputs",
   "main": "index.js",
   "scripts": {
