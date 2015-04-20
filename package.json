@@ -1,0 +1,26 @@
+{
+  "name": "nibbler-configurator",
+  "version": "0.0.0",
+  "description": "Common module for creating nibbler's context object from various inputs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmalecki/nibbler-configurator"
+  },
+  "keywords": [
+    "nibbler"
+  ],
+  "author": "Maciej Małecki <me@mmalecki.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmalecki/nibbler-configurator/issues"
+  },
+  "homepage": "https://github.com/mmalecki/nibbler-configurator",
+  "dependencies": {
+    "try-require": "~1.0.0",
+    "yargs": "~3.6.0"
+  }
+}
