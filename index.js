@@ -13,10 +13,16 @@ module.exports = function(options) {
     .describe('runner', 'which runner to use (for example, nibbler-ssh-runner or just ssh)')
     .alias('runner', 'r')
     .default('runner', 'nibbler-runner-local')
+
+    .describe('sudo', 'whether to use sudo')
+    .boolean('sudo')
+    .default('sudo', false)
+
     .argv
 
   var config = {
-    runner: args.runner || process.env.RUNNER
+    runner: args.runner || process.env.RUNNER,
+    sudo: args.sudo || process.env.SUDO || false
   }
 
   var context = {
@@ -35,6 +41,8 @@ module.exports = function(options) {
 
   var runner = new Runner(context)
   context.runner = runner
+
+  context.sudo = config.sudo
 
   return context
 }
